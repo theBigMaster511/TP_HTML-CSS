@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices tableaux - Fusions et planning</title>
+</head>
+<body>
+
+    <h1>Exercice 4 : Tableau avec fusions (colspan, rowspan)</h1>
+    
+    
+    <table border="4" cellpadding="8" cellspacing="5" >
+        <!-- En-tête -->
+        <thead>
+            <tr>
+                <th>Titre1</th>
+                <th>Titre2</th>
+                <th>Titre3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Ligne 1 : trois cellules simples -->
+            <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+            </tr>
+
+            <!-- Ligne 2 : "Deux colonnes assemblées" sur les deux premières colonnes -->
+            <tr>
+                <td colspan="2">Deux colonnes assemblées</td>
+                <td>Cellule Simple</td>
+            </tr>
+
+            <!-- Ligne 3 : "Deux lignes assemblées" avec alignement vertical en haut (rowspan=2 sur la 3e cellule) -->
+            <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+                <td rowspan="2" valign="top">Deux lignes assemblées avec alignement verticale en haut</td>
+            </tr>
+
+            <!-- Ligne 4 : deux cellules simples (la troisième est prise par le rowspan) -->
+            <tr>
+                <td>Cellule Simple</td>
+                <td>Cellule Simple</td>
+            </tr>
+
+            <!-- Ligne 5 : "Deux lignes assemblées, deux colonnes assemblées"
+                 On place une cellule qui fusionne 2 lignes et 2 colonnes (rowspan=2, colspan=2)
+                 Cette cellule occupe les colonnes 2 et 3 sur les lignes 5 et 6.
+                 La première colonne de la ligne 5 est une cellule simple. -->
+            <tr>
+                <td>Cellule Simple</td>
+                <td rowspan="2" colspan="2">Deux lignes assemblées,<br>deux colonnes assemblées</td>
+            </tr>
+
+            <!-- Ligne 6 : cellule simple pour la première colonne (car le rowspan/colspan de la ligne précédente occupe les colonnes 2 et 3) -->
+            <tr>
+                <td>Cellule Simple</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+    <hr>
+
+    <h1>Exercice 5 : Planning des tâches par équipe</h1>
+
+    
+    <table border="1" cellspacing="3" cellpadding="8" width="80%">
+
+    <!-- Titre -->
+    <tr>
+        <th colspan="7">
+            Planning des taches par équipe
+        </th>
+    </tr>
+
+    <!-- Mois -->
+    <tr>
+        <th rowspan="2">Équipes</th>
+        <th colspan="5">janvier</th>
+        <th rowspan="2"></th>
+    </tr>
+
+    <!-- Jours -->
+    <tr>
+        <th>Lundi</th>
+        <th>Mardi</th>
+        <th>Mercredi</th>
+        <th>Jeudi</th>
+        <th>Vendredi</th>
+    </tr>
+
+    <!-- Semaine 1 -->
+    <tr>
+        <td>Équipe1</td>
+        <td colspan="3">tache1</td>
+        <td colspan="2">tache2</td>
+        <td rowspan="2">semaine1</td>
+    </tr>
+
+    <tr>
+        <td>Équipe2</td>
+        <td colspan="2">tache1</td>
+        <td colspan="3">tache2</td>
+    </tr>
+
+    <!-- Semaine 2 -->
+    <tr>
+        <td>Équipe1</td>
+        <td>tache3</td>
+        <td colspan="2">tache4</td>
+        <td colspan="2">tache5</td>
+        <td rowspan="2">semaine2</td>
+    </tr>
+
+    <tr>
+        <td>Équipe2</td>
+        <td colspan="2">tache3</td>
+        <td colspan="3">tache4</td>
+    </tr>
+
+    <!-- Semaine 3 -->
+    <tr>
+        <td>Équipe1</td>
+        <td colspan="2">tache5</td>
+        <td colspan="3">tache6</td>
+        <td rowspan="2">semaine3</td>
+    </tr>
+
+    <tr>
+        <td>Équipe2</td>
+        <td>tache5</td>
+        <td colspan="2">tache6</td>
+        <td colspan="2"></td>
+    </tr>
+
+    <!-- Semaine 4 -->
+    <tr>
+        <td>Équipe1</td>
+        <td colspan="3">tache7</td>
+        <td colspan="2">tache8</td>
+        <td rowspan="2">semaine4</td>
+    </tr>
+
+    <tr>
+        <td>Équipe2</td>
+        <td colspan="2">tache7</td>
+        <td colspan="3">tache8</td>
+    </tr>
+
+</table>
+
+    
+
+</body>
+</html>
+  
+
+</body>
+</html>

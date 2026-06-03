@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes du semestre 1 - Moussa Ndiaye</title>
+</head>
+<body>
+
+    <h1>Tableau des notes</h1>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <!-- Titre du tableau -->
+        <caption>Notes du semestre 1 — Moussa Ndiaye (L1 Informatique)</caption>
+
+        <!-- En-têtes de colonnes -->
+        <thead>
+            <tr>
+                <th scope="col">Matière</th>
+                <th scope="col">Coef.</th>
+                <th scope="col">Note DS /20</th>
+                <th scope="col">Note Examen /20</th>
+                <th scope="col">Moyenne /20</th>
+            </tr>
+        </thead>
+
+        <!-- Corps du tableau : données par matière + calcul de la moyenne -->
+        <tbody>
+            <!-- Développement Web : (15×0.4)+(17×0.6)=6+10.2=16.2 -->
+            <tr>
+                <td>Développement Web</td>
+                <td>3</td>
+                <td>15</td>
+                <td>17</td>
+                <td>16,2</td>
+            </tr>
+            <!-- Algorithmique : (12×0.4)+(14×0.6)=4,8+8,4=13,2 -->
+            <tr>
+                <td>Algorithmique</td>
+                <td>4</td>
+                <td>12</td>
+                <td>14</td>
+                <td>13,2</td>
+            </tr>
+            <!-- Base de données : (11×0.4)+(13×0.6)=4,4+7,8=12,2 -->
+            <tr>
+                <td>Base de données</td>
+                <td>3</td>
+                <td>11</td>
+                <td>13</td>
+                <td>12,2</td>
+            </tr>
+            
+            <tr>
+                <td>Réseaux</td>
+                <td>2</td>
+                <td>16</td>
+                <td>15</td>
+                <td>15,4</td>
+            </tr>
+            
+            <tr>
+                <td>Anglais</td>
+                <td>1</td>
+                <td>13</td>
+                <td>12</td>
+                <td>12,4</td>
+            </tr>
+        </tbody>
+
+        <!-- Pied du tableau : deux lignes avec colspan=4 pour fusionner les 4 premières colonnes -->
+        <tfoot>
+          
+            <tr>
+                <td colspan="4">Moyenne générale des Examens (pondérée)</td>
+                <td>14,1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p><em>Calcul des moyennes individuelles : (Note DS x 0,4) + (Note Examen x 0,6).</em></p>
+
+</body>
+</html>

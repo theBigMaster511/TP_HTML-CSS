@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emploi du temps - L1 Informatique</title>
+</head>
+<body>
+
+    <h1>Emploi du temps (semestre 1)</h1>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+        <!-- En-tête : première cellule vide + jours -->
+        <thead>
+            <tr>
+                <th scope="col">Horaire</th>
+                <th scope="col">Lundi</th>
+                <th scope="col">Mardi</th>
+                <th scope="col">Mercredi</th>
+                <th scope="col">Jeudi</th>
+                <th scope="col">Vendredi</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Ligne 08h-10h -->
+            <tr>
+                <th scope="row">08h-10h</th>
+                <!-- Développement Web (CM) sur Lundi + Mardi (colspan=2) -->
+                <td colspan="2">Développement Web (CM)</td>
+                <!-- Mercredi : Anglais -->
+                <td>Anglais</td>
+                <!-- Jeudi : Projet tutoré (rowspan=2, couvre 08h-10h et 10h-12h) -->
+                <td rowspan="2">Projet tutoré</td>
+                <!-- Vendredi : Base de données -->
+                <td>Base de données</td>
+            </tr>
+
+            <!-- Ligne 10h-12h (4 cellules car Jeudi déjà occupé par rowspan) -->
+            <tr>
+                <th scope="row">10h-12h</th>
+                <td>Algorithmique</td>
+                <td>Mathématiques</td>
+                <td>Réseaux</td>
+                <!-- Pas de cellule pour Jeudi (absorbé par rowspan) -->
+                <td>Sport</td>
+            </tr>
+
+            <!-- Ligne 14h-16h -->
+            <tr>
+                <th scope="row">14h-16h</th>
+                <!-- Lundi : Sport -->
+                <td>Sport</td>
+                <!-- Mardi, Mercredi, Jeudi : Libre / Révisions (colspan=3) -->
+                <td colspan="3">Libre / Révisions</td>
+                <!-- Vendredi : TP Réseaux -->
+                <td>TP Réseaux</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

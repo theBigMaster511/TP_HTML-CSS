@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filière Informatique et Développement Web</title>
+</head>
+<body>
+
+    <!-- Bannière / logo -->
+    <div>
+        <img src="images/Supinfo logo.png" 
+             alt="Bannière représentant le code et le développement web" 
+             width="100%" 
+             style="max-width:1200px; height:auto;">
+    </div>
+
+    <h1> Filière : Informatique et Développement Web</h1>
+    <p>Bienvenue dans la formation qui prépare aux métiers du numérique ! Découvrez le programme, l'emploi du temps et les débouchés.</p>
+
+    <!-- Sous-titres -->
+    <h2>Programme détaillé</h2>
+    <p>Le tableau ci-dessous présente les matières enseignées au semestre 3, leurs coefficients et crédits ECTS.</p>
+
+    <!-- Tableau des matières (≥5 lignes) avec thead, tbody, tfoot et total -->
+    <table border="1" cellpadding="8" cellspacing="1">
+        <caption>Matières du semestre 3 – Coefficient total = 30</caption>
+        <thead>
+            <tr>
+                <th scope="col">Matière</th>
+                <th scope="col">Coefficient</th>
+                <th scope="col">Crédits ECTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th>Développement Web (HTML/CSS/JS)</th><td>5</td><td>6</td></tr>
+            <tr><th>Algorithmique avancée</th><td>4</td><td>5</td></tr>
+            <tr><th>Base de données (SQL)</th><td>4</td><td>5</td></tr>
+            <tr><th>Réseaux et sécurité</th><td>3</td><td>4</td></tr>
+            <tr><th>Anglais technique</th><td>2</td><td>3</td></tr>
+            <tr><th>Projet tutoré</th><td>3</td><td>4</td></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td><strong>21</strong></td>
+                <td><strong>27</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2> Emploi du temps simplifié (semaine type)</h2>
+    <p>Extrait sur 3 jours (Lundi, Mercredi, Vendredi) avec fusions de créneaux.</p>
+
+    <!-- Emploi du temps avec colspan et rowspan (3 jours × 3 créneaux) -->
+    <table border="1" cellpadding="8" cellspacing="1">
+        <thead>
+            <tr>
+                <th scope="col">Créneau</th>
+                <th scope="col">Lundi</th>
+                <th scope="col">Mercredi</th>
+                <th scope="col">Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Créneau 1 : 8h-10h -->
+            <tr>
+                <th scope="row">8h - 10h</th>
+                <td>Développement Web<br>(TP)</td>
+                <td>Base de données<br>(CM)</td>
+                <!-- Vendredi : cours sur deux créneaux (rowspan) -->
+                <td rowspan="2">Projet tutoré<br>(salle projet)</td>
+            </tr>
+            <!-- Créneau 2 : 10h-12h -->
+            <tr>
+                <th scope="row">10h - 12h</th>
+                <td>Algorithmique<br>(CM)</td>
+                <td>Anglais technique<br>(TD)</td>
+                <!-- pas de cellule pour vendredi car rowspan -->
+            </tr>
+            <!-- Créneau 3 : 14h-16h avec colspan sur Mercredi+Jeudi? Ici on simule colspan sur Mercredi (car jeudi absent) -->
+            <tr>
+                <th scope="row">14h - 16h</th>
+                <td>Réseaux<br>(TP)</td>
+                <td colspan="2">Travail personnel / révisions<br>(salle libre)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><em>Légende : CM = Cours Magistral, TD = Travaux Dirigés, TP = Travaux Pratiques.<br>
+    Le créneau du vendredi matin est fusionné (rowspan) ; l'après-midi du mercredi et vendredi est fusionné (colspan).</em></p>
+
+    <h3> Ressource externe - Découvrez le métier</h3>
+    <!-- Image cliquable vers un site externe (target="_blank") -->
+    <a href="https://developer.mozilla.org/fr/docs/Learn" target="_blank" rel="noopener noreferrer">
+        <img src="images/ordi.jpg" 
+             alt="Cliquez pour découvrir les ressources MDN sur le développement web"
+             width="300" height="150">
+    </a>
+    <p>Cliquez sur l'image pour accéder au guide d'apprentissage du Web (MDN).</p>
+
+    <h2> Débouchés professionnels</h2>
+    <ul>
+        <li>Développeur web / full-stack</li>
+        <li>Chef de projet digital</li>
+        <li>Administrateur base de données</li>
+        <li>Consultant en cybersécurité</li>
+        <li>Intégrateur / concepteur d'interfaces</li>
+    </ul>
+
+    <hr>
+    <footer>
+        <p> Contact : <a href="mailto:Supinfo@gmail.com">Supinfo@gmail.com</a> | Sup info, Dakar</p>
+    </footer>
+
+</body>
+</html>
